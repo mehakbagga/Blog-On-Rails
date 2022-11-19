@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .one-line {
+     width: 100%;
+     overflow: hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+ }
+ 
+ .index-card {
+     width: 32%;
+ }
+ 
+ .comment-headline {
+     font-size: 1.5em;
+ }
+ 
+ small .comment-delete-link-div {
+     display: inline-block;
+ }
+ 
+ .comment-delete-link {
+     font-size: 0.9em;
+     padding-left: 0%;
+ 
+ }
+ 
+ .comment-delete-link:focus {
+     outline: none !important;
+     border: 0px; 
+     box-sizing: none; 
+     background-color: transparent; 
+     box-shadow: none;
+ }
+ 
+ .dot {
+     font-size: 0.5em;
+     
+ }
+ 
+ .comment-small {
+     padding-top:0em;
+ }
+ 
+ .comment-p {
+     padding-bottom: 0em;
+     margin-bottom: 0em;
+ }
+ 
+ .index-post-title {
+     text-decoration: none;
+ }
+ 
+ @media (max-width: 850px) {
+     .index-card {
+         width: 48%;
+     }
+ }
+ 
+ @media (max-width: 480px) {
+     .index-card {
+         width: 100%;
+     }
+ }
